@@ -1,0 +1,19 @@
+{
+  "name": "screen-capturer",
+  "productName": "screen-capturer",
+  "description": "屏幕截图小工具",
+  "version": "0.1.0",
+  "main": "main.js",
+  "author": "cek",
+  "scripts": {
+    "build:linux": "cross-env BUILD_TARGET=linux node ./build.js",
+    "build:win32": "cross-env BUILD_TARGET=win32 node ./build.js",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "chalk": "^2.1.0",
+    "cross-env": "^5.0.5",
+    "electron": "^1.7.5",
+    "electron-packager": "^9.0.0"
+  }
+}
