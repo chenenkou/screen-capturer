@@ -97,7 +97,13 @@ app.on('ready', function() {
     mainWindow = null;
   });
 
-  let trayIcon = `${__dirname}/icons/icon.${iconExt}`
+  let trayIcon = ''
+  if (platform.OSX) {
+    trayIcon = `${__dirname}/icons/iconTemplate.png`
+  } else {
+    trayIcon = `${__dirname}/icons/icon.${iconExt}`
+  }
+  
   appTray = new Tray(trayIcon)
 
   let contextMenu = Menu.buildFromTemplate([

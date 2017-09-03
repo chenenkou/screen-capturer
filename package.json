@@ -8,6 +8,7 @@
   "scripts": {
     "build:linux": "cross-env BUILD_TARGET=linux node ./build.js",
     "build:win32": "cross-env BUILD_TARGET=win32 node ./build.js",
+    "build:darwin": "cross-env BUILD_TARGET=darwin node ./build.js",
     "start": "electron ."
   },
   "devDependencies": {
